@@ -14,6 +14,7 @@ git push origin branch_utama ( Main World ) (Update branch utama)
 
 
 Jika Ada error seperti ini disarankan melakukan git pull branch_utama
+
 error: failed to push some refs to 'https://github.com/AriqFaridzki/Tiket.com.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
