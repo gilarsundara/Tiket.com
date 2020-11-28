@@ -1,0 +1,125 @@
+Membuat Branch Baru git checkout -b nama_branch (pertama aja)
+
+git add . (update perubahan )
+
+git commit -m "komentar kamu" (update perubahan)
+
+git push origin nama_branch ( yang branch ini ya ) (update perubahan)
+
+git checkout branch_utama (Pindah Ke Branch Utama)
+
+git merge --no-ff nama_branch sebelumnya (menggabungkan branch sebelumnya)
+
+git push origin branch_utama ( Main World ) (Update branch utama)
+
+
+Jika Ada error seperti ini disarankan melakukan git pull branch_utama
+
+error: failed to push some refs to 'https://github.com/AriqFaridzki/Tiket.com.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+Contoh 
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (main)
+$ git checkout -b FiturBaru
+Switched to a new branch 'FiturBaru'
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (FiturBaru)
+$ git add .
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (FiturBaru)
+$ git commit -m "Update test"
+[FiturBaru cabd49b] Update test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename file ariq.txt => file ariq2.txt (100%)
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (FiturBaru)
+$ git push origin FiturBaru
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 232 bytes | 232.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'FiturBaru' on GitHub by visiting:
+remote:      https://github.com/AriqFaridzki/Tiket.com/pull/new/FiturBaru
+remote:
+To https://github.com/AriqFaridzki/Tiket.com.git
+ * [new branch]      FiturBaru -> FiturBaru
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (FiturBaru)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (main)
+$ git merge --no-ff FiturBaru
+Removing file ariq.txt
+Merge made by the 'recursive' strategy.
+ file ariq.txt => file ariq2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename file ariq.txt => file ariq2.txt (100%)
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (main)
+$ git push origin main
+To https://github.com/AriqFaridzki/Tiket.com.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/AriqFaridzki/Tiket.com.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (main)
+$ git pull origin main
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 10 (delta 4), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (10/10), 1.25 KiB | 12.00 KiB/s, done.
+From https://github.com/AriqFaridzki/Tiket.com
+ * branch            main       -> FETCH_HEAD
+   72ab7f8..63b0a44  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ index-slider.html | 0
+ tiketpesawat.html | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index-slider.html
+ create mode 100644 tiketpesawat.html
+
+ariqf@DESKTOP-CHIEJ60 MINGW64 /d/DiLo Bandung/Front End Beginner/Tiket.com (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 503 bytes | 503.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AriqFaridzki/Tiket.com.git
+   63b0a44..cdc885d  main -> main
+
+
+Some notes from Restu
+
+Restu : git checkout nama_branch ( ini untuk pindah branch )
+Restu : git merge --no-ff nama_branch ( ini untuk penggabungan branch )
+Restu : Kalo mau memulai membuat coding
+
+- bikin branch baru
+- lakukan perubahan
+- update perubahan ke branch baru kita
+- pindah ke branch utama
+- gabungkan branch yang kita buat sebelumnya
+- barangkali ada perubahan dari team kita, lakukan dulu git pull origin nama_branch_utama
+- update ke branch utama
+
