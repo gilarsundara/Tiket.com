@@ -1,19 +1,19 @@
 /*Script CSS Bagian Deskripsi-Promosi (punya kemal)*/
-.box {
+.k-box {
 	box-sizing: border-box;
 	width: 33%;
 	padding: 5px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.box-bg {
+.k-box-bg {
 	display: block;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto;
 	height: 1250px
 }
-.box-center {
+.k-box-center {
 	width: 600px;
 	padding: 10px 20px 50px 20px;
 	margin-left: 150px;
@@ -21,19 +21,19 @@
 	margin-top: 150px;
 	margin-bottom: 150px;
 }
-.box-feature1 {
+.k-box-feature1 {
 	background-color: #f7f7f7;
 	padding: 23px 24px;
 	border-radius: 4px;
 	width: 1096px;
 	margin: auto;
 }
-.box-feature2 {
+.k-box-feature2 {
 	background: #fbfcfe;
 	padding: 27px 24px;
 	text-align: center;
 }
-.box-title {
+.k-box-title {
 	max-width: 1210px!important;
 	width: 100%!important;
 	min-width: 1024px!important;
@@ -42,44 +42,60 @@
 	margin: 0 auto;
 	position: relative;
 }
-.box-flex {
+.k-box-flex {
 	display: flex;
 	flex-wrap: wrap;
 }
-.box-div {	
+.k-box-div {	
 	padding: 10px 20px 50px 20px;
 	margin-left: 100px;
 	margin-right: 100px;
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
-.box-image {
+.k-box-desc {
+	max-width: 1210px
+	width: 100%
+	min-width: 1024px
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	position: relative;
+}
+.k-box-bg2 {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	height: 1250px;
+}
+.k-box-image {
 	position: relative;
 	overflow: hidden;
 	height: 100px;
 	margin-bottom: 24px;
 }
-.box-footer {
+.k-box-footer {
 	margin-bottom: 50px;
 	text-align: center;
 	padding-top: 25px;
 	margin-top: 30px
 }
-.bg-center {
+.k-bg-center {
 	display: block;
 	background-repeat: no-repeat;
 	background-position: 50%;
 	background-size: auto;
 	height: 1250px;	
 }
-.head {
+.k-head {
 	margin-bottom: 50px;
 	text-align: center;
 	border-top: 2px solid #ddd;
 	padding-top: 50px;
 	margin-top: 30px;
 }
-.title1 {
+.k-title1 {
 	font-family: "Arial";
 	margin-bottom: 16px;
 	font-size: 30px;
@@ -89,7 +105,7 @@
 	letter-spacing: normal;
 	color: #35405a
 }
-.title2 {
+.k-title2 {
 	font-family: "Arial";
 	margin-bottom: 5px;
 	font-size: 16px;
@@ -99,7 +115,7 @@
 	letter-spacing: normal;
 	color: #35405a
 }
-.subtitle {
+.k-subtitle {
 	font-family: "Arial";
 	white-space: pre-line;
 	min-height: 126px;
@@ -114,7 +130,7 @@
 	width: calc(50% - 1240px);
 	height: calc(50% - 568px);
 }
-.subtitle2 {
+.k-subtitle2 {
 	font-family: "Arial";
 	white-space: pre-line;
 	min-height: 126px;
@@ -129,7 +145,7 @@
 	width: calc(50% - 1240px);
 	height: calc(50% - 568px);
 }
-.subtitle3 {
+.k-subtitle3 {
 	font-family: "Arial";
 	text-align: right;
 	white-space: pre-line;
@@ -145,18 +161,18 @@
 	width: calc(50% - 1240px);
 	height: calc(50% - 568px);
 }
-.footer img {
+.k-footer img {
 	margin-top: -34px;
 }
-.row {
+.k-row {
 	margin:0 -16px;
 	margin-top: 48px;
 	display: inline-flex;
 }
-.column {
+.k-column {
 	padding:0 16px;
 }
-.closing-text {
+.k-closing-text {
 	margin-top: 50px;
 	font-size: 30px;
 	font-style: normal;
@@ -168,37 +184,21 @@
 	color: #35405a;
 	font-weight: bold;
 }
-.box-desc {
-	max-width: 1210px
-	width: 100%
-	min-width: 1024px
-	padding-left: 15px;
-	padding-right: 15px;
-	margin: 0 auto;
-	position: relative;
-}
-.box-bg2 {
-	display: block;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto;
-	height: 1250px;
-}
-.gambar {
+.k-gambar {
 	width: 660px;
 	height: 368px;
 }
-.desc {
+.k-desc {
 	width: calc(100% - 660px);
 	height: calc(100% - 368px);
 }
-.easy-simple-installment {
+.k-installment {
 	margin-top: 90px;
 }
-.easy-simple-installment .text-content {
+.k-text-content {
 	padding-left: 42px;
 }
-.easy-simple-installment .title-text {
+.k-title-text {
 	font-family: "Arial";
 	font-size: 30px;
 	color: #35405a;
@@ -209,7 +209,7 @@
 	letter-spacing: normal;
 	height: 46px;
 }
-.easy-simple-installment .title-text2 {
+.k-title-text2 {
 	text-align: right;
 	font-family: "Arial";
 	font-size: 30px;
@@ -221,7 +221,7 @@
 	letter-spacing: normal;
 	height: 46px;
 }
-.easy-simple-installment p {
+.k-installment p {
 	width: 449px;
 	font-size: 16px;
 	font-weight: normal;
@@ -232,11 +232,11 @@
 	color: #58627a;
 	margin-top: 4px;
 }
-.easy-simple-installment .link-more {
+.k-link-more {
 	margin-top: 38px;
 	padding-top:12px;
 }
-.easy-simple-installment .link-more a {
+.k-link-more a {
 	font-family: "Arial";
 	width: 47px;
 	height: 24px;
@@ -248,36 +248,29 @@
 	text-align: center;
 	color: #0064d2
 }
-.col-xs-5 {
-	width: 41.66667%;
-}
-.col-xs-7 {
+.k-column1 {
 	width: 58.33333%;
 }
-.col-xs-9 {
-	width: 58.33333%
-	margin-left: 50px;
-}
-.col-xs-12 {
+.k-column2 {
 	width: 100%;
 	margin-left: 50px;
 }
 .text-content {
 	padding-left: 42px
 }
-.margin-top {
+.k-margin-top {
 	margin-top: 150px;
 }
-.margin-top2 {
+.k-margin-top2 {
 	text-align: right;
 	margin-top: 100px;
 }
-.txt-selengkapnya {
+.k-txt-selengkapnya {
 	font-family: Arial;
 	font-color: #00f
 	font-size: 20px;
 }
-.txt-selengkapnya2 {
+.k-txt-selengkapnya2 {
 	text-align: right;
 	font-family: Arial;
 	font-color: #00f;
