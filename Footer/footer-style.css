@@ -1,0 +1,269 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+}
+.flex-footer{
+	line-height: 1.15;
+font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+width: 100%!important;
+/*min-width: 1024px!important;*/
+margin: 0 auto;
+position: relative;
+display: flex;
+max-width: 1200px!important;
+padding: 45px 10px;
+-webkit-box-align: unset;
+align-items: center;
+text-align: left;
+}
+/*contact us start*/
+.contact-us{
+min-width: 320px;
+}
+.tiket-logo img{
+	max-width: 182px;
+	margin-bottom: 29px;
+}
+.icon-image img{
+	width: 40px;
+	height: 40px;
+}
+.contact-us-phone{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 19px;
+	font-family:arial !important;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+.content-grey{
+	color: #58627a
+}
+/*contact us end*/
+/*footer-list start*/
+.footer-list{
+	line-height: 1.15;
+font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+-webkit-box-flex: 1;
+flex: 1 1;
+width: 215px;
+height: 308px;
+}
+.footer-item-title{
+	box-sizing: border-box;
+line-height: 39px;
+font-size: 16px;
+color: #35405a;
+vertical-align: middle;
+display: block;
+margin-bottom: 29px;
+font-family: arial;
+width: 215px;
+color: #35405a !important;
+margin-bottom: 40px;
+}
+.footer-item-contents{
+box-sizing: border-box;
+	width: 215px;
+	height: 30px;
+}
+.footer-item-content{
+box-sizing: border-box;
+display: block;
+margin-bottom: 15px;
+}
+.footer-item-content a{
+	text-decoration: none;
+	color: #35405a;
+	font-family: arial;
+}
+.footer-item-content a:hover{
+	color: blue;
+
+}
+/*footer-list end*/
+/*bottom footer start*/
+.bottom-footer{
+line-height: 1.15;
+font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+width: 100%!important;
+min-width: 1024px!important;
+margin: 0 auto;
+position: relative;
+display: flex;
+max-width: 1200px!important;
+padding: 45px 10px;
+-webkit-box-align: center;
+align-items: center;
+}
+.wonderful-indonesia{
+	line-height: 1.15;
+font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+min-width: 320px;
+}
+.wonderful-indonesia-image img{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+display: inline-block;
+line-height: 54px;
+height: 54px;
+width: 147px;
+vertical-align: middle;
+}
+.wonderful-indonesia-content{
+font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+display: inline-block;
+margin-left: 8px;
+line-height: 15px;
+font-size: 10px;
+color: #58627a;
+vertical-align: middle;
+}
+.secure-transaction{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+width: 430px;
+height: 108px;
+line-height: 54px;
+align-self: start;
+text-align: left;
+margin-left: 10px;
+}
+.awards{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+align-self: start;
+width: 215px;
+line-height: 108px;
+}
+.bottom-footer-title{
+	box-sizing: border-box;
+line-height: 54px;
+font-size: 16px;
+color: #35405a;
+font-family: OpenSans-SemiBold;
+text-align: left;
+margin-left: 10px;
+width: 215px;
+}
+.secure-transaction-conten{
+line-height: 54px;
+text-align: left;
+width: 430px;
+height: 108px;
+}
+.secure-transaction-conten img{
+	margin-left: 10px;
+	border-style: none;
+}
+.brand-list{
+box-sizing: border-box;
+line-height: 54px;
+vertical-align: middle;
+margin: 0px;
+}
+.iata{
+box-sizing: border-box;
+border-style: none;
+max-height: 100%;
+display: inline-block;
+vertical-align: middle;
+line-height: 31px;
+height: 31px;
+max-width: 48px;
+}
+.top-brand{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+border-style: none;
+max-height: 100%;
+margin-left: 16px;
+display: inline-block;
+vertical-align: middle;
+line-height: 40px;
+height: 40px;
+max-width: 43px;
+}
+.super-brand{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+border-style: none;
+max-height: 100%;
+margin-left: 16px;
+display: inline-block;
+vertical-align: middle;
+line-height: 36px;
+height: 36px;
+max-width: 40px;
+}
+.footer-follow-us{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+align-self: start;
+width: 215px;
+line-height: 108px;
+}
+.footer-follow-us-content{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+line-height: 54px;
+margin: 0 -8px;
+}
+.follow-us-link{
+	font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+outline: none;
+color: inherit;
+text-decoration: none;
+position: relative;
+display: inline-block;
+margin: 0 8px;
+line-height: 31px;
+vertical-align: middle;
+height: 31px;
+width: 31px;
+border-radius: 8px;
+background: #c6cbda;
+}
+.follow-us-link .facebook i{
+	box-sizing: border-box;
+font-family: tix-icon!important;
+font-style: normal;
+font-weight: 400;
+font-feature-settings: normal;
+font-variant: normal;
+text-transform: none;
+-webkit-font-smoothing: antialiased;
+display: block;
+text-align: center;
+vertical-align: middle;
+color: #fff;
+position: absolute;
+bottom: -1px;
+right: 0;
+font-size: 25px;
+line-height: normal;
+}
+/*bottom footer end*/
+.copyright{
+	line-height: 1.15;
+font-family: OpenSans-Regular!important;
+box-sizing: border-box;
+background-color: #fff;
+text-align: center;
+font-size: 14px;
+color: #35405a;
+padding: 30px 0;
+margin-right: 10px;
+}

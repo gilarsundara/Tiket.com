@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tiket Pesawat</title>
+    <style type="text/css">
+      .box-pesantiket{
+        width: 1180px;
+        height: 400px;
+        margin-left: 100px;
+        margin-right: 80px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #aaaaaa;
+      }
+
+      .sayhi{
+        width: calc(100% - 700px);
+        padding-top: 10px;
+        padding-left: 40px;
+        z-index: 2;
+      }
+
+      .box-pesantiket-subheader{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: #F6F9FF;
+        border-radius: 10px 10px 0 0;
+        height: 120px;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .pilihan-base{
+        width: 700px;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .pilihan-grid{
+        width: 16.6%;
+        height: 100%;
+        /* border: 1px solid red; */
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+
+      .pilihan-tombol{
+        width: 86px;
+        height: 86px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .pilihan-tombol img{
+        width: 100%;
+        border-radius: 3px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-sizing: border-box;
+      }
+
+      .pilihan-tombol-selected{
+        width: 86px;
+        height: 86px;
+        border-radius: 5px;
+        border: 2px solid mediumblue;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .pilihan-tombol-selected img{
+        width: 100%;
+        border-radius: 3px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-sizing: border-box;
+      }
+
+      .pilihan-tombol-judul{
+        text-align: center;
+        font-size: 7pt;
+        font-weight: bold;
+      }
+
+      .pilihan-tombol-checked{
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: dodgerblue;
+        top: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        margin-top: 4px;
+        margin-right: 3px;
+      }
+
+      .box-pesantiket-pesawat-option-base{
+        display: flex;
+        padding-top: 20px;
+        width: 100%;
+        height: 60px;
+      }
+
+      .box-pesantiket-pesawat-option-margin-left{
+        height: 15px;
+        width: 40px;
+      }
+
+      .box-pesantiket-pesawat-option-icon{
+        border-radius: 50%;
+        background-color: dodgerblue;
+        padding-left: 3px;
+        height: 20px;
+        width: 20px;
+      }
+
+      .box-pesantiket-pesawat-option-say{
+        border-radius: 50%;
+        height: 20px;
+        font-size: 20px;
+        padding-left: 20px;
+        width: 900px;
+      }
+
+      .box-pesantiket-pesawat-option-cari{
+        height: 20px;
+        font-size: 15px;
+        width: calc(100%-960px);
+        text-align: right;
+        padding-right: 40px;
+      }
+
+      .radio-option-margin-left{
+        width: 40px;
+      }
+
+      .radio-option-jalan{
+        display: inline-block;
+        font-size: 18px;
+      }
+
+      .box-pesantiket-pesawat-detail-base{
+        display: flex;
+        margin-top: 20px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        height: 80px;
+      }
+
+      .box-pesantiket-pesawat-detail-dari-grid{
+        width: 22.5%;
+        border-right: 1px dashed lightgray;
+        padding-left: 40px;
+      }
+
+      .box-pesantiket-pesawat-detail-ke-grid{
+        width: 22.5%;
+        border-right: 1px solid lightgray;
+        padding-left: 15px;
+      }
+
+      .box-pesantiket-pesawat-detail-berangkat-grid{
+        width: 17%;
+        border-right: 1px solid lightgray;
+        padding-left: 15px;
+      }
+
+      .box-pesantiket-pesawat-detail-pulang-grid{
+        width: 17%;
+        border-right: 1px solid lightgray;
+        padding-left: 15px;
+      }
+
+      .box-pesantiket-pesawat-detail-penumpangkelas-grid{
+        width: 21%;
+        padding-left: 15px;
+      }
+
+      .box-pesantiket-pesawat-detail-base p {
+        color: gray;
+        font-size: 17px;
+        margin-top: 7px;
+      }
+
+      .box-pesantiket-pesawat-detail-base-tombol-submit {
+        width: 260px;
+        height: 30px;
+        border-radius: 30px;
+        text-align: center;
+        color: mediumblue;
+        font-size: 19px;
+        background-color: #FEDD00;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: calc(100% - 280px);
+        padding-top: 5px;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="box-pesantiket">
+      <div class="box-pesantiket-subheader">
+        <div class="sayhi">
+          <h3>Hey, kamu</h3>
+          <h1>Mau ke mana?</h1>
+        </div>
+
+        <div class="pilihan-base">
+          <div class="pilihan-grid">
+            <div class="pilihan-tombol-selected">
+              <img src="pesawat.png">
+              <div class="pilihan-tombol-checked">
+                v
+              </div>
+              <div class="pilihan-tombol-judul">
+                Pesawat
+              </div>
+            </div>
+          </div>
+
+          <div class="pilihan-base">
+            <div class="pilihan-grid">
+              <div class="pilihan-tombol">
+                <img src="hotel.png">
+                <div class="pilihan-tombol-judul">
+                  Hotel
+                </div>
+              </div>
+            </div>
+
+            <div class="pilihan-grid">
+              <div class="pilihan-tombol">
+                <img src="todo.png">
+                <div class="pilihan-tombol-judul">
+                  To Do
+                </div>
+              </div>
+            </div>
+
+            <div class="pilihan-grid">
+              <div class="pilihan-tombol">
+                <img src="kereta.png">
+                <div class="pilihan-tombol-judul">
+                  Tiket Kereta Api
+                </div>
+              </div>
+            </div>
+
+            <div class="pilihan-grid">
+              <div class="pilihan-tombol">
+                <img src="mobil.png">
+                <div class="pilihan-tombol-judul">
+                  Sewa Mobil
+                </div>
+              </div>
+            </div>
+
+            <div class="pilihan-grid">
+              <div class="pilihan-tombol">
+                <img src="event.png">
+                <div class="pilihan-tombol-judul">
+                  Event
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="box-pesantiket-pesawat-option-base">
+      <div class="box-pesantiket-pesawat-option-margin-left">
+      </div>
+      <div class="box-pesantiket-pesawat-option-icon">
+        P
+      </div>
+      <div class="box-pesantiket-pesawat-option-say">
+        Cari harga tiket pesawat murah & promo di sini
+      </div>
+      <div class="box-pesantiket-pesawat-option-cari">
+        Pencarian terakhir >
+      </div>
+    </div>
+
+    <div style="display: inline-flex;">
+      <div class="radio-option-margin-left">
+      </div>
+
+      <div class="radio-option-jalan">
+        <label><input type="radio" name="jalan" value="sekali">Sekali Jalan</label><label><input type="radio" name="jalan" value="pulang-pergi" style="margin-left: 20px;">Pulang Pergi</label><br>
+      </div>
+    </div>
+
+    <div class="box-pesantiket-pesawat-detail-base">
+      <div class="box-pesantiket-pesawat-detail-dari-grid">
+        <p>Dari</p>
+      </div>
+      <div class="box-pesantiket-pesawat-detail-ke-grid">
+        <p>Ke</p>
+      </div>
+      <div class="box-pesantiket-pesawat-detail-berangkat-grid">
+        <p>Berangkat</p>
+      </div>
+      <div class="box-pesantiket-pesawat-detail-pulang-grid">
+        <p>Pulang</p>
+      </div>
+      <div class="box-pesantiket-pesawat-detail-penumpangkelas-grid">
+        <p>Penumpang & Kelas Kabin</p>
+      </div>
+    </div>
+
+    <div class="box-pesantiket-pesawat-detail-base-tombol-submit">
+      CARI PENERBANGAN
+    </div>
+
+  </div>
+
+  </body>
+
+</html>
