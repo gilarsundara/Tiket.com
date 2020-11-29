@@ -1,0 +1,278 @@
+/*Script CSS Bagian Deskripsi-Promosi (punya kemal)*/
+.k-box {
+	box-sizing: border-box;
+	width: 33%;
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.k-box-bg {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	height: 1250px
+}
+.k-box-center {
+	width: 600px;
+	padding: 10px 20px 50px 20px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+.k-box-feature1 {
+	background-color: #f7f7f7;
+	padding: 23px 24px;
+	border-radius: 4px;
+	width: 1096px;
+	margin: auto;
+}
+.k-box-feature2 {
+	background: #fbfcfe;
+	padding: 27px 24px;
+	text-align: center;
+}
+.k-box-title {
+	max-width: 1210px!important;
+	width: 100%!important;
+	min-width: 1024px!important;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	position: relative;
+}
+.k-box-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.k-box-div {	
+	padding: 10px 20px 50px 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.k-box-desc {
+	max-width: 1210px
+	width: 100%
+	min-width: 1024px
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	position: relative;
+}
+.k-box-bg2 {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	height: 1250px;
+}
+.k-box-image {
+	position: relative;
+	overflow: hidden;
+	height: 100px;
+	margin-bottom: 24px;
+}
+.k-box-footer {
+	margin-bottom: 50px;
+	text-align: center;
+	padding-top: 25px;
+	margin-top: 30px
+}
+.k-bg-center {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: auto;
+	height: 1250px;	
+}
+.k-head {
+	margin-bottom: 50px;
+	text-align: center;
+	border-top: 2px solid #ddd;
+	padding-top: 50px;
+	margin-top: 30px;
+}
+.k-title1 {
+	font-family: "Arial";
+	margin-bottom: 16px;
+	font-size: 30px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #35405a
+}
+.k-title2 {
+	font-family: "Arial";
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #35405a
+}
+.k-subtitle {
+	font-family: "Arial";
+	white-space: pre-line;
+	min-height: 126px;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	margin: 0;
+	color: #58627a
+	width: calc(50% - 1240px);
+	height: calc(50% - 568px);
+}
+.k-subtitle2 {
+	font-family: "Arial";
+	white-space: pre-line;
+	min-height: 126px;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	margin: 0;
+	color: #58627a
+	width: calc(50% - 1240px);
+	height: calc(50% - 568px);
+}
+.k-subtitle3 {
+	font-family: "Arial";
+	text-align: right;
+	white-space: pre-line;
+	min-height: 126px;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	margin: 0;
+	color: #58627a
+	width: calc(50% - 1240px);
+	height: calc(50% - 568px);
+}
+.k-footer img {
+	margin-top: -34px;
+}
+.k-row {
+	margin:0 -16px;
+	margin-top: 48px;
+	display: inline-flex;
+}
+.k-column {
+	padding:0 16px;
+}
+.k-closing-text {
+	margin-top: 50px;
+	font-size: 30px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.53;
+	letter-spacing: normal;
+	text-align: center;
+	font-family: "Arial";
+	color: #35405a;
+	font-weight: bold;
+}
+.k-gambar {
+	width: 660px;
+	height: 368px;
+}
+.k-desc {
+	width: calc(100% - 660px);
+	height: calc(100% - 368px);
+}
+.k-installment {
+	margin-top: 90px;
+}
+.k-text-content {
+	padding-left: 42px;
+}
+.k-title-text {
+	font-family: "Arial";
+	font-size: 30px;
+	color: #35405a;
+	font-weight: bolder;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.53;
+	letter-spacing: normal;
+	height: 46px;
+}
+.k-title-text2 {
+	text-align: right;
+	font-family: "Arial";
+	font-size: 30px;
+	color: #35405a;
+	font-weight: bolder;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.53;
+	letter-spacing: normal;
+	height: 46px;
+}
+.k-installment p {
+	width: 449px;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #58627a;
+	margin-top: 4px;
+}
+.k-link-more {
+	margin-top: 38px;
+	padding-top:12px;
+}
+.k-link-more a {
+	font-family: "Arial";
+	width: 47px;
+	height: 24px;
+	font-size: 16px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #0064d2
+}
+.k-column1 {
+	width: 58.33333%;
+}
+.k-column2 {
+	width: 100%;
+	margin-left: 50px;
+}
+.text-content {
+	padding-left: 42px
+}
+.k-margin-top {
+	margin-top: 150px;
+}
+.k-margin-top2 {
+	text-align: right;
+	margin-top: 100px;
+}
+.k-txt-selengkapnya {
+	font-family: Arial;
+	font-color: #00f
+	font-size: 20px;
+}
+.k-txt-selengkapnya2 {
+	text-align: right;
+	font-family: Arial;
+	font-color: #00f;
+	font-size: 20px;
+}
