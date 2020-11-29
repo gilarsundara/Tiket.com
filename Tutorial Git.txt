@@ -1,14 +1,16 @@
-Membuat Branch Baru git checkout -b nama_branch (pertama aja)
+Membuat Branch Baru git checkout -b nama_branch (Sekali aja ya)
+
+git checkout nama_branch ( branch yg mau di update perubahannya (bukan branch main) )
 
 git add . (update perubahan )
 
 git commit -m "komentar kamu" (update perubahan)
 
-git push origin nama_branch ( yang branch ini ya ) (update perubahan)
+git push origin nama_branch ( yang branch baru dibuat ya / branch sendiri ( bukan branch utama ) (update perubahan)
 
 git checkout branch_utama (Pindah Ke Branch Utama)
 
-git merge --no-ff nama_branch sebelumnya (menggabungkan branch sebelumnya)
+git merge --no-ff nama_branch sebelumnya (untuk menggabungkan branch_utama dengan branch kamu)
 
 git push origin branch_utama ( Main World ) (Update branch utama)
 
