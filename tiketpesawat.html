@@ -160,10 +160,17 @@
         width: 24px;
       }
 
-      .box-pesantiket-pesawat-detail-base input{
+      .box-pesantiket-pesawat-detail-base input[type=text]{
         width: 160px;
-        border-color: white;
+        border: none;
+        /* border: 1px solid red; */
         color: lightgray;
+        height: 28px;
+        font-size: 18px;
+        margin-left: 4px;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        box-sizing: border-box;
       }
 
       .box-pesantiket-pesawat-detail-dari-grid{
@@ -175,10 +182,11 @@
       .box-pesantiket-pesawat-detail-ke-grid{
         width: 22.5%;
         border-right: 1px solid lightgray;
-        padding-left: 15px;
+        padding-left: 20px;
       }
 
       .box-pesantiket-pesawat-detail-berangkat-grid{
+        position: relative;
         width: 17%;
         border-right: 1px solid lightgray;
         padding-left: 15px;
@@ -213,6 +221,13 @@
         margin-right: 20px;
         margin-left: calc(100% - 280px);
         padding-top: 5px;
+      }
+
+      .box-calendar{
+        position: absolute;
+        width: 200px;
+      	height: 300px;
+        background-color: yellow;
       }
 
 
@@ -326,7 +341,19 @@
       </div>
       <div class="box-pesantiket-pesawat-detail-berangkat-grid">
         <p>Berangkat</p>
+        <span> <img src="icon_flight_ke.png"> </span> <span> <button type="button" id="toggle_berangkat">Sen,30 Nov 2020</button> </span>
+        <div class="box-calendar">
+
+        </div>
       </div>
+
+      <script type="text/javascript" src="jquery-3.js"></script>
+      <script type="text/javascript">
+          $("#toggle_berangkat").click(function(){
+            $(".box-calendar").toggle();
+          });
+      </script>
+
       <div class="box-pesantiket-pesawat-detail-pulang-grid">
         <p>Pulang</p>
       </div>
