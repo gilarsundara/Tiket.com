@@ -1,0 +1,49 @@
+/*Script CSS Bagian Syarat dan Ketentuan (punya kemal)*/
+.k-installment {
+	margin-top: 90px;
+}
+.k-box-title {
+	max-width: 1210px!important;
+	width: 100%!important;
+	min-width: 1024px!important;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	position: relative;
+}
+.k-box-bg {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	height: 1250px
+}
+.k-title {
+	font-family: "Arial";
+	font-size: 30px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #35405a
+}
+.k-subtitle {
+	font-family: "Arial";
+	white-space: pre-line;
+	font-size: 20px;
+}
+.marginbot {
+	margin-bottom: 7px;
+}
+.marginright {
+	margin-right: 20px;
+}
+.marginleft {
+	margin-left: 20px;
+}
+.margintop {
+	margin-top: 20px;
+}
+.text-center {
+	text-align: center;
+}
