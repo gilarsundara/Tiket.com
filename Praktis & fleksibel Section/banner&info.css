@@ -15,6 +15,29 @@ p, h3{
 	color: #58627a;
 }
 
+/*Start here for navbar*/
+
+.ariq-banner{
+	margin-bottom: 64px;
+}
+
+.ariq-banner img{
+	background-repeat: no-repeat;
+	width: 100%
+}
+
+.ariq-title-cicilan{
+	margin-bottom: 30px;
+}
+
+.ariq-title-cicilan h1{
+	text-align: center;
+
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+}
+
 .ariq-section-wrapper{
 	/*background-color: pink;*/
 }
@@ -52,6 +75,23 @@ p, h3{
 	line-height: 1.5;
 
 }
+/*extra config Section berbagai Pilihan Produk*/
+.ariq-extra-config h3{
+	margin-top:80px;
+}
+
+.ariq-extra-config p{
+	margin-bottom: 80px
+}
+
+/*extra config Section berbagai Pilihan kartu kredit*/
+.ariq-extra-config2 h3{
+	margin-top:120px;
+}
+
+.ariq-extra-config2 p{
+	margin-bottom: 120px
+}
 
 .ariq-content-praflex img{
 	width: 480px;
@@ -66,3 +106,6 @@ p, h3{
 .ariq-space{
 	margin:70px 0px;
 }
+
+
+/*Start here for footer*/
