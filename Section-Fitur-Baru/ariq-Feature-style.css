@@ -65,7 +65,7 @@ body, html{
 }
 
 .ariq-text-config{
-	line-height: 5px;			/*memberi jarak antara text*/
+	line-height: 1.5;			/*memberi jarak antara text*/
 	font-size: 12px;
 }
 
