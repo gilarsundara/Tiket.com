@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tiket Pesawat</title>
+    <script type="text/javascript" src="jquery-3.js"></script>
     <style type="text/css">
       .box-pesantiket{
         width: 1180px;
@@ -44,6 +45,10 @@
         padding-bottom: 23px;
         padding-right: 10px;
         box-sizing: border-box;
+      }
+
+      .pilihan-grid a{
+        text-decoration: none;
       }
 
       .pilihan-tombol{
@@ -116,18 +121,16 @@
       }
 
       .box-pesantiket-pesawat-option-icon{
-        border-radius: 50%;
-        background-color: dodgerblue;
         padding-left: 3px;
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
       }
 
       .box-pesantiket-pesawat-option-say{
         border-radius: 50%;
         height: 20px;
         font-size: 20px;
-        padding-left: 20px;
+        padding-left: 15px;
         width: 900px;
       }
 
@@ -199,6 +202,7 @@
       }
 
       .box-pesantiket-pesawat-detail-penumpangkelas-grid{
+        position: relative;
         width: 21%;
         padding-left: 15px;
       }
@@ -223,12 +227,47 @@
         padding-top: 5px;
       }
 
-      .box-calendar{
+      .box-penumpangkelas{
         position: absolute;
-        width: 200px;
-      	height: 300px;
-        background-color: yellow;
+        right: 0;
+        width: 320px;
+      	height: 200px;
+        padding: 7px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 24px 0px lightgray;
       }
+
+      .box-calendar-berangkat{
+        position: absolute;
+        padding: 2px;
+        right: 0;
+        width: 500px;
+      	height: 300px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 24px 0px lightgray;
+      }
+
+      .box-calendar-berangkat img{
+        width: 490px;
+      }
+
+      .box-calendar-pulang{
+        position: absolute;
+        padding: 2px;
+        right: 0;
+        width: 500px;
+      	height: 300px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 24px 0px lightgray;
+      }
+
+      .box-calendar-pulang img{
+        width: 490px;
+      }
+
 
 
     </style>
@@ -256,49 +295,60 @@
           </div>
 
           <div class="pilihan-base">
+
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="hotel.png">
                 <div class="pilihan-tombol-judul">
                   Hotel
                 </div>
               </div>
+              </a>
             </div>
 
             <div class="pilihan-grid">
-              <div class="pilihan-tombol">
+              <a href="#">
+                <div class="pilihan-tombol">
                 <img src="todo.png">
                 <div class="pilihan-tombol-judul">
                   To Do
                 </div>
               </div>
+            </a>
             </div>
 
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="kereta.png">
                 <div class="pilihan-tombol-judul">
                   Tiket Kereta Api
                 </div>
               </div>
+              </a>
             </div>
 
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="mobil.png">
                 <div class="pilihan-tombol-judul">
                   Sewa Mobil
                 </div>
               </div>
+              </a>
             </div>
 
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="event.png">
                 <div class="pilihan-tombol-judul">
                   Event
                 </div>
               </div>
+              </a>
             </div>
 
         </div>
@@ -311,7 +361,7 @@
       <div class="box-pesantiket-pesawat-option-margin-left">
       </div>
       <div class="box-pesantiket-pesawat-option-icon">
-        P
+        <img src="icon_flight.png" width="100%">
       </div>
       <div class="box-pesantiket-pesawat-option-say">
         Cari harga tiket pesawat murah & promo di sini
@@ -341,24 +391,98 @@
       </div>
       <div class="box-pesantiket-pesawat-detail-berangkat-grid">
         <p>Berangkat</p>
-        <span> <img src="icon_flight_ke.png"> </span> <span> <button type="button" id="toggle_berangkat">Sen,30 Nov 2020</button> </span>
-        <div class="box-calendar">
-
+        <span> <img src="icon_calendar.png"> </span> <span> <button type="button" id="toggle_berangkat">Sen, 30 Nov 2020</button> </span>
+        <div class="box-calendar-berangkat">
+          <img src="calendar_berangkat.png">
         </div>
       </div>
 
-      <script type="text/javascript" src="jquery-3.js"></script>
       <script type="text/javascript">
           $("#toggle_berangkat").click(function(){
-            $(".box-calendar").toggle();
+            $(".box-calendar-berangkat").toggle();
           });
       </script>
 
       <div class="box-pesantiket-pesawat-detail-pulang-grid">
         <p>Pulang</p>
+        <span> <img src="icon_calendar.png"> </span> <span> <button type="button" id="toggle_pulang">Sel, 1 Des 2020</button> </span>
+        <div class="box-calendar-pulang">
+          <img src="calendar_pulang.png">
+        </div>
       </div>
+
+      <script type="text/javascript">
+          $("#toggle_pulang").click(function(){
+            $(".box-calendar-pulang").toggle();
+          });
+      </script>
+
       <div class="box-pesantiket-pesawat-detail-penumpangkelas-grid">
         <p>Penumpang & Kelas Kabin</p>
+       <button type="button" id="toggle_penumpangkelas"><b id='Penumpang'></b><b> Penumpang,</b><b id='Kelas'> Ekonomi</b></button>
+
+        <div class="box-penumpangkelas">
+
+          <script type="text/javascript">
+              function changeKelasEko(){
+                  var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' Ekonomi';
+              }
+              function changeKelasPreko(){
+                  var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' Premium Ekonomi';
+              }
+              function changeKelasBisnis(){
+              	var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' Bisnis';
+              }
+              function changeKelasFirst(){
+              	var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' First';
+              }
+
+              </script>
+
+              <div id=penumpangkelas-detail style="display: inline-flex;">
+              <span style="width: 150px"><h3>Penumpang</h3>
+                <hr>
+                Dewasa <input style="width: 30px" type='number' value='0' id='dewasa'><br>
+                Anak <input style="width: 30px" type='number' value='0' id='anak'><br>
+                Bayi <input style="width: 30px" type='number' value='0' id='bayi'>
+              </span>
+              <span style="padding-left: 2px; width: 150px; border-left: 1px solid lightgray;"><h3>Kelas Kabin</h3>
+                <hr>
+                <input type='button' onclick='changeKelasEko()' value='Ekonomi'/><br>
+                <input type='button' onclick='changeKelasPreko()' value='Premium Ekonomi'/><br>
+                <input type='button' onclick='changeKelasBisnis()' value='Bisnis'/><br>
+                <input type='button' onclick='changeKelasFirst()' value='First'/>
+              </span>
+              </div>
+
+        </div>
+
+        <script type="text/javascript">
+            $("#toggle_penumpangkelas").click(function(){
+              $(".box-penumpangkelas").toggle();
+            });
+        </script>
+
       </div>
     </div>
 
