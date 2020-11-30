@@ -232,8 +232,6 @@ line-height: 31px;
 vertical-align: middle;
 height: 31px;
 width: 31px;
-border-radius: 8px;
-background: #c6cbda;
 }
 .follow-us-link .facebook i{
 	box-sizing: border-box;
@@ -270,3 +268,44 @@ margin-right: 10px;
 .ariq-background-installment2{
 	z-index: -1;
 }
+
+.ariq-footer-icon{
+	width: 27px;
+height:27px;
+border-radius: 2px;
+}
+/*.facebook, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.twitter, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.linkedin, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.youtube, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.instagram, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.tiktok, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}*/
