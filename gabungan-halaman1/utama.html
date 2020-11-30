@@ -18,6 +18,8 @@
 
 	    <link rel="stylesheet" type="text/css" href="../footer/footer-style.css">
 
+	    <script type="text/javascript" src="../jquery-3.js"></script>
+
 
 </head>
 <body>
@@ -156,7 +158,11 @@
             <div class="pilihan-grid">
               <a href="#">
                 <div class="pilihan-tombol">
+<<<<<<< HEAD
                 <img src="todo.png">
+=======
+                <img src="../todo.png">
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
                 <div class="pilihan-tombol-judul">
                   To Do
                 </div>
@@ -207,7 +213,11 @@
       <div class="box-pesantiket-pesawat-option-margin-left">
       </div>
       <div class="box-pesantiket-pesawat-option-icon">
+<<<<<<< HEAD
         <img src="icon_flight.png" width="100%">
+=======
+        <img src="../icon_flight.png" width="100%">
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
       </div>
       <div class="box-pesantiket-pesawat-option-say">
         Cari harga tiket pesawat murah & promo di sini
@@ -229,6 +239,7 @@
     <div class="box-pesantiket-pesawat-detail-base">
       <div class="box-pesantiket-pesawat-detail-dari-grid">
         <p>Dari</p>
+<<<<<<< HEAD
         <span> <img src="icon_flight_dari.png"> </span> <span> <input type="text" placeholder="Mau ke mana?"> </span>
       </div>
       <div class="box-pesantiket-pesawat-detail-ke-grid">
@@ -240,6 +251,19 @@
         <span> <img src="icon_calendar.png"> </span> <span> <button type="button" id="toggle_berangkat">Sen, 30 Nov 2020</button> </span>
         <div class="box-calendar-berangkat">
           <img src="calendar_berangkat.png">
+=======
+        <span> <img src="../icon_flight_dari.png"> </span> <span> <input type="text" placeholder="Mau ke mana?"> </span>
+      </div>
+      <div class="box-pesantiket-pesawat-detail-ke-grid">
+        <p>Ke</p>
+        <span> <img src="../icon_flight_ke.png"> </span> <span> <input type="text" placeholder="Mau ke mana?"> </span>
+      </div>
+      <div class="box-pesantiket-pesawat-detail-berangkat-grid">
+        <p>Berangkat</p>
+        <span> <img src="../icon_calendar.png"> </span> <span> <button type="button" id="toggle_berangkat">Sen, 30 Nov 2020</button> </span>
+        <div class="box-calendar-berangkat">
+          <img src="../calendar_berangkat.png">
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
         </div>
       </div>
 
@@ -251,9 +275,15 @@
 
       <div class="box-pesantiket-pesawat-detail-pulang-grid">
         <p>Pulang</p>
+<<<<<<< HEAD
         <span> <img src="icon_calendar.png"> </span> <span> <button type="button" id="toggle_pulang">Sel, 1 Des 2020</button> </span>
         <div class="box-calendar-pulang">
           <img src="calendar_pulang.png">
+=======
+        <span> <img src="../icon_calendar.png"> </span> <span> <button type="button" id="toggle_pulang">Sel, 1 Des 2020</button> </span>
+        <div class="box-calendar-pulang">
+          <img src="../calendar_pulang.png">
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
         </div>
       </div>
 
@@ -268,8 +298,12 @@
        <button type="button" id="toggle_penumpangkelas"><b id='Penumpang'></b><b> Penumpang,</b><b id='Kelas'> Ekonomi</b></button>
 
         <div class="box-penumpangkelas">
+<<<<<<< HEAD
 
           <script type="text/javascript">
+=======
+        	          <script type="text/javascript">
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
               function changeKelasEko(){
                   var x = document.getElementById('dewasa').value;
                   var y = document.getElementById('anak').value;
@@ -320,6 +354,7 @@
                 <input type='button' onclick='changeKelasFirst()' value='First'/>
               </span>
               </div>
+<<<<<<< HEAD
 
         </div>
 
@@ -331,13 +366,29 @@
 
       </div>
     </div>
+=======
+            </div>
+          </div>
+        </div>
+</div>
+
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
 
     <div class="box-pesantiket-pesawat-detail-base-tombol-submit">
       CARI PENERBANGAN
     </div>
+<<<<<<< HEAD
 
   </div>
 
+=======
+        <script type="text/javascript">
+            $("#toggle_penumpangkelas").click(function(){
+              $(".box-penumpangkelas").toggle();
+            });
+        </script>
+<div class="ariq-feature">
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
 <!-- Bagian Ariq -->
 	<div class="ariq-feature">
 		<div class="ariq-container">
@@ -355,7 +406,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Profile</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Pesan lebih cepat, isi data penumpang dengan sekali klik.</p>
 						</div>
-					</div></div>
+					</div>
+				</div>
 
 				<div class="ariq-flex-box-text">
 					<!-- menggunakan flex wrap -->
@@ -368,7 +420,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Reschedule</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Memudahkan kamu mengatur ulang penerbangan.</p>
 						</div>
-					</div></div>
+					</div>
+				</div>
 
 				<div class="ariq-flex-box-text">
 					<!-- menggunakan flex wrap -->
@@ -381,7 +434,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Booking Process</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Pemesanan tanpa ribet di mana pun dan kapan pun.</p>
 						</div>
-					</div></div>
+					</div>
+				</div>
 
 				<div class="ariq-flex-box-text">
 					<!-- menggunakan flex wrap -->
@@ -394,8 +448,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Refund</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Refund tiket tanpa ribet dari aplikasi maupun website.</p>
 						</div>
-					</div></div>
-
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -445,8 +499,10 @@
 					<div class="ariq-button">
 						<a href="https://www.tiket.com/info/tiket-clean" target="_blank">
 							<button type="button" class="ariq-button-config">Info Selengkapnya</button>
-						</a></div></div></div>
-
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

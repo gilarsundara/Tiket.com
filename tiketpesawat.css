@@ -1,10 +1,15 @@
-      .box-pesantiket{
+ .box-pesantiket{
         width: 1180px;
         height: 400px;
         margin-left: 100px;
         margin-right: 80px;
         border-radius: 10px;
+        background:#fff;
         box-shadow: 0px 0px 5px #aaaaaa;
+<<<<<<< HEAD
+=======
+        position: absolute;
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
       }
 
       .sayhi{
@@ -259,4 +264,8 @@
 
       .box-calendar-pulang img{
         width: 490px;
+<<<<<<< HEAD
       }
+=======
+      }
+>>>>>>> 42cf21089a34473f03391f3180fb949cde71ce91
