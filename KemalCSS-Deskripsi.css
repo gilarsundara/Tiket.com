@@ -1,4 +1,7 @@
 /*Script CSS Bagian Deskripsi-Promosi (punya kemal)*/
+
+
+
 .k-box {
 	box-sizing: border-box;
 	width: 33%;
@@ -96,7 +99,7 @@
 	margin-top: 30px;
 }
 .k-title1 {
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	margin-bottom: 16px;
 	font-size: 30px;
 	font-style: normal;
@@ -106,7 +109,7 @@
 	color: #35405a
 }
 .k-title2 {
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	margin-bottom: 5px;
 	font-size: 16px;
 	font-style: normal;
@@ -116,7 +119,7 @@
 	color: #35405a
 }
 .k-subtitle {
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	white-space: pre-line;
 	min-height: 126px;
 	font-size: 14px;
@@ -131,7 +134,7 @@
 	height: calc(50% - 568px);
 }
 .k-subtitle2 {
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	white-space: pre-line;
 	min-height: 126px;
 	font-size: 20px;
@@ -146,7 +149,7 @@
 	height: calc(50% - 568px);
 }
 .k-subtitle3 {
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	text-align: right;
 	white-space: pre-line;
 	min-height: 126px;
@@ -173,14 +176,14 @@
 	padding:0 16px;
 }
 .k-closing-text {
-	margin-top: 50px;
+	margin-top: 100px;
 	font-size: 30px;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 1.53;
 	letter-spacing: normal;
 	text-align: center;
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	color: #35405a;
 	font-weight: bold;
 }
@@ -199,7 +202,7 @@
 	padding-left: 42px;
 }
 .k-title-text {
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	font-size: 30px;
 	color: #35405a;
 	font-weight: bolder;
@@ -211,7 +214,7 @@
 }
 .k-title-text2 {
 	text-align: right;
-	font-family: "Arial";
+	font-family: 'OpenSans', sans-serif;
 	font-size: 30px;
 	color: #35405a;
 	font-weight: bolder;
@@ -231,6 +234,9 @@
 	letter-spacing: normal;
 	color: #58627a;
 	margin-top: 4px;
+
+	position: relative;
+	z-index: 10;
 }
 .k-link-more {
 	margin-top: 38px;
@@ -265,14 +271,21 @@
 	text-align: right;
 	margin-top: 100px;
 }
+
+.k-installment a{
+	text-decoration: none;
+}
 .k-txt-selengkapnya {
-	font-family: Arial;
-	font-color: #00f
+	font-family: OpenSans, sans-serif;
+	color: #0064d2;
+	font-weight: 600;
 	font-size: 20px;
 }
 .k-txt-selengkapnya2 {
 	text-align: right;
-	font-family: Arial;
-	font-color: #00f;
+	font-family: OpenSans, sans-serif;
+	color: #0064d2;
+	font-weight: 600;
 	font-size: 20px;
 }
+
