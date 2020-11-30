@@ -233,9 +233,9 @@ vertical-align: middle;
 height: 31px;
 width: 31px;
 border-radius: 8px;
-background: #c6cbda;
+/*background: #c6cbda;*/
 }
-.follow-us-link .facebook i{
+/*.follow-us-link .facebook i{
 	box-sizing: border-box;
 font-family: tix-icon!important;
 font-style: normal;
@@ -253,6 +253,42 @@ bottom: -1px;
 right: 0;
 font-size: 25px;
 line-height: normal;
+}
+*/
+.facebook, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.twitter, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.linkedin, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.youtube, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.instagram, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
+}
+
+.tiktok, img{
+width: 27px;
+height:27px;
+border-radius: 2px;
 }
 /*bottom footer end*/
 .copyright{
