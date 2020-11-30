@@ -3,6 +3,9 @@
 <head>
 	<title>Tiket.com</title>
 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
 	    <link rel="stylesheet" href="../Navbar-revin/stylenav.css">
 
 	    <link rel="stylesheet" type="text/css" href="../slide/slide-style.css">
@@ -14,6 +17,8 @@
 	    <link rel="stylesheet" type="text/css" href="../KemalCSS-Deskripsi.css">
 
 	    <link rel="stylesheet" type="text/css" href="../footer/footer-style.css">
+
+	    <script type="text/javascript" src="../jquery-3.js"></script>
 
 
 </head>
@@ -73,8 +78,8 @@
 			<div class="nav-kanan">
                 <a href="" class="right-side" style="margin-left:11rem;">Elite Rewards</a>
                 <a href="" class="right-side">Cek Order</a>
-                <a href="" class="right-side"> Login</a>
-                <a href="" class="right-side" style="border: 1px solid rgb(240, 237, 237); border-radius: 20px; padding: 5px; box-shadow: 2px 2px 2px 2px #ECEDEF; color: rgb(27, 27, 212);">Daftar</a>
+                <a href="../Login-tiket.com/Login.html" class="right-side"> Login</a>
+                <a href="../Login-tiket.com/Login.html" class="right-side" style="border: 1px solid rgb(240, 237, 237); border-radius: 20px; padding: 5px; box-shadow: 2px 2px 2px 2px #ECEDEF; color: rgb(27, 27, 212);">Daftar</a>
             </div>
         </div>
 	</nav>
@@ -138,49 +143,60 @@
           </div>
 
           <div class="pilihan-base">
+
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="../hotel.png">
                 <div class="pilihan-tombol-judul">
                   Hotel
                 </div>
               </div>
+              </a>
             </div>
 
             <div class="pilihan-grid">
-              <div class="pilihan-tombol">
+              <a href="#">
+                <div class="pilihan-tombol">
                 <img src="../todo.png">
                 <div class="pilihan-tombol-judul">
                   To Do
                 </div>
               </div>
+            </a>
             </div>
 
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="../kereta.png">
                 <div class="pilihan-tombol-judul">
                   Tiket Kereta Api
                 </div>
               </div>
+              </a>
             </div>
 
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="../mobil.png">
                 <div class="pilihan-tombol-judul">
                   Sewa Mobil
                 </div>
               </div>
+              </a>
             </div>
 
             <div class="pilihan-grid">
+              <a href="#">
               <div class="pilihan-tombol">
                 <img src="../event.png">
                 <div class="pilihan-tombol-judul">
                   Event
                 </div>
               </div>
+              </a>
             </div>
 
         </div>
@@ -193,7 +209,7 @@
       <div class="box-pesantiket-pesawat-option-margin-left">
       </div>
       <div class="box-pesantiket-pesawat-option-icon">
-        P
+        <img src="../icon_flight.png" width="100%">
       </div>
       <div class="box-pesantiket-pesawat-option-say">
         Cari harga tiket pesawat murah & promo di sini
@@ -215,26 +231,112 @@
     <div class="box-pesantiket-pesawat-detail-base">
       <div class="box-pesantiket-pesawat-detail-dari-grid">
         <p>Dari</p>
+        <span> <img src="../icon_flight_dari.png"> </span> <span> <input type="text" placeholder="Mau ke mana?"> </span>
       </div>
       <div class="box-pesantiket-pesawat-detail-ke-grid">
         <p>Ke</p>
+        <span> <img src="../icon_flight_ke.png"> </span> <span> <input type="text" placeholder="Mau ke mana?"> </span>
       </div>
       <div class="box-pesantiket-pesawat-detail-berangkat-grid">
         <p>Berangkat</p>
+        <span> <img src="../icon_calendar.png"> </span> <span> <button type="button" id="toggle_berangkat">Sen, 30 Nov 2020</button> </span>
+        <div class="box-calendar-berangkat">
+          <img src="../calendar_berangkat.png">
+        </div>
       </div>
+
+      <script type="text/javascript">
+          $("#toggle_berangkat").click(function(){
+            $(".box-calendar-berangkat").toggle();
+          });
+      </script>
+
       <div class="box-pesantiket-pesawat-detail-pulang-grid">
         <p>Pulang</p>
+        <span> <img src="../icon_calendar.png"> </span> <span> <button type="button" id="toggle_pulang">Sel, 1 Des 2020</button> </span>
+        <div class="box-calendar-pulang">
+          <img src="../calendar_pulang.png">
+        </div>
       </div>
+
+      <script type="text/javascript">
+          $("#toggle_pulang").click(function(){
+            $(".box-calendar-pulang").toggle();
+          });
+      </script>
+
       <div class="box-pesantiket-pesawat-detail-penumpangkelas-grid">
         <p>Penumpang & Kelas Kabin</p>
-      </div>
-    </div>
+       <button type="button" id="toggle_penumpangkelas"><b id='Penumpang'></b><b> Penumpang,</b><b id='Kelas'> Ekonomi</b></button>
+
+        <div class="box-penumpangkelas">
+        	          <script type="text/javascript">
+              function changeKelasEko(){
+                  var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' Ekonomi';
+              }
+              function changeKelasPreko(){
+                  var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' Premium Ekonomi';
+              }
+              function changeKelasBisnis(){
+              	var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' Bisnis';
+              }
+              function changeKelasFirst(){
+              	var x = document.getElementById('dewasa').value;
+                  var y = document.getElementById('anak').value;
+                  var z = document.getElementById('bayi').value;
+                  var total = Number(x) + Number(y) + Number(z);
+                  document.getElementById('Penumpang').innerHTML = total;
+                  document.getElementById('Kelas').innerHTML = ' First';
+              }
+
+              </script>
+
+              <div id=penumpangkelas-detail style="display: inline-flex;">
+              <span style="width: 150px"><h3>Penumpang</h3>
+                <hr>
+                Dewasa <input style="width: 30px" type='number' value='0' id='dewasa'><br>
+                Anak <input style="width: 30px" type='number' value='0' id='anak'><br>
+                Bayi <input style="width: 30px" type='number' value='0' id='bayi'>
+              </span>
+              <span style="padding-left: 2px; width: 150px; border-left: 1px solid lightgray;"><h3>Kelas Kabin</h3>
+                <hr>
+                <input type='button' onclick='changeKelasEko()' value='Ekonomi'/><br>
+                <input type='button' onclick='changeKelasPreko()' value='Premium Ekonomi'/><br>
+                <input type='button' onclick='changeKelasBisnis()' value='Bisnis'/><br>
+                <input type='button' onclick='changeKelasFirst()' value='First'/>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+
 
     <div class="box-pesantiket-pesawat-detail-base-tombol-submit">
       CARI PENERBANGAN
     </div>
-</div>
-
+        <script type="text/javascript">
+            $("#toggle_penumpangkelas").click(function(){
+              $(".box-penumpangkelas").toggle();
+            });
+        </script>
+<div class="ariq-feature">
+<!-- Bagian Ariq -->
 	<div class="ariq-feature">
 		<div class="ariq-container">
 			<div class="ariq-feature-box">
@@ -251,7 +353,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Profile</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Pesan lebih cepat, isi data penumpang dengan sekali klik.</p>
 						</div>
-					</div></div>
+					</div>
+				</div>
 
 				<div class="ariq-flex-box-text">
 					<!-- menggunakan flex wrap -->
@@ -264,7 +367,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Reschedule</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Memudahkan kamu mengatur ulang penerbangan.</p>
 						</div>
-					</div></div>
+					</div>
+				</div>
 
 				<div class="ariq-flex-box-text">
 					<!-- menggunakan flex wrap -->
@@ -277,7 +381,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Booking Process</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Pemesanan tanpa ribet di mana pun dan kapan pun.</p>
 						</div>
-					</div></div>
+					</div>
+				</div>
 
 				<div class="ariq-flex-box-text">
 					<!-- menggunakan flex wrap -->
@@ -290,8 +395,8 @@
 							<h3 class="ariq-text-title ariq-text-config">Simple Refund</h3>
 							<p class="ariq-text-subtitle ariq-text-config">Refund tiket tanpa ribet dari aplikasi maupun website.</p>
 						</div>
-					</div></div>
-
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -341,10 +446,14 @@
 					<div class="ariq-button">
 						<a href="https://www.tiket.com/info/tiket-clean" target="_blank">
 							<button type="button" class="ariq-button-config">Info Selengkapnya</button>
-						</a></div></div></div>
-
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
+<!-- Bagian Ariq end -->
 
 <div class="k-box-bg" style="background-image: url(https://www.tiket.com/home-ms/assets/bg.png);">
 		<div class="k-box-title">
@@ -429,6 +538,7 @@
 					</div>
 				</div>
 				<div class="k-installment">
+				
 					<div class="k-box-title">
 						<div class="k-row">
 							<div class="k-column1">
@@ -446,9 +556,18 @@
 							<div class="k-column2">
 								<img src="https://www.tiket.com/home-ms/assets/c85b03c5.svg">
 							</div>
+
 						</div>
+
 					</div>
+
 				</div>
+				
+				</div>
+
+			
+
+
 				<!-- end desc bagian bawah -->
 			</div>
 		</div>
@@ -457,7 +576,7 @@
 </div>
 
 <div class="footer">
-	<div class="container flex-footer">
+	<div class="container flex-footer" style="margin-top: 1100px">
 	<!-- contact us start -->
   		<div class="contact-us">
   			<div class="tiket-logo">
@@ -638,7 +757,8 @@
 		<div class="bottom-footer-title">Follow Us</div>
 		<div class="footer-follow-us-content">
 			<a class="follow-us-link facebook" href="https://www.facebook.com/tiket" target="_blank">
-				<i class="tix tix-facebook"></i>
+				<i class="tix tix-facebook">	
+				</i>
 			</a>
 			<a class="follow-us-link twitter" href="https://twitter.com/tiket" target="_blank">
 				<i class="tix tix-twitter"></i>
@@ -665,6 +785,7 @@
 </div>
 <!-- coryright end -->
 </div>
+
 
 <script>
 	  var slideIndex = 1;

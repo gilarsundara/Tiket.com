@@ -1,0 +1,111 @@
+
+*{
+	font-family: OpenSans-Regular!important;
+	margin:0;
+}
+
+html, body{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+p, h3{
+	color: #58627a;
+}
+
+/*Start here for navbar*/
+
+.ariq-banner{
+	margin-bottom: 64px;
+}
+
+.ariq-banner img{
+	background-repeat: no-repeat;
+	width: 100%
+}
+
+.ariq-title-cicilan{
+	margin-bottom: 30px;
+}
+
+.ariq-title-cicilan h1{
+	text-align: center;
+
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.ariq-section-wrapper{
+	/*background-color: pink;*/
+}
+
+.ariq-section-container{
+	/*background-color: lightyellow;*/
+
+	margin:0px auto; 	 		/*agar Ketengah*/
+	width: 1200px; 		 		/*Mengatur Fixed Width agar tidak melebar saat di minimize*/
+}
+
+.ariq-content-praflex{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.ariq-text-praflex-config{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding:0px 16px 0px 10px; /*betulin jarak teks dengan gambar*/
+}
+
+.ariq-text-praflex-config h3{
+	font-family: OpenSans-SemiBold, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	margin-top:90px;
+}
+
+.ariq-text-praflex-config p{
+	font-family: OpenSans-Regular, sans-serif;
+	font-size: 16px;
+	margin-bottom:90px;
+	line-height: 1.5;
+
+}
+/*extra config Section berbagai Pilihan Produk*/
+.ariq-extra-config h3{
+	margin-top:80px;
+}
+
+.ariq-extra-config p{
+	margin-bottom: 80px
+}
+
+/*extra config Section berbagai Pilihan kartu kredit*/
+.ariq-extra-config2 h3{
+	margin-top:120px;
+}
+
+.ariq-extra-config2 p{
+	margin-bottom: 120px
+}
+
+.ariq-content-praflex img{
+	width: 480px;
+	margin-right:10px;
+}
+
+#ariq-img-config-2{
+	margin-left:10px;
+	margin-right:25px;
+}
+
+.ariq-space{
+	margin:70px 0px;
+}
+
+
+/*Start here for footer*/
