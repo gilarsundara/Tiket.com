@@ -1,7 +1,7 @@
 /*Ariq Section*/
 
 /* Global Config*/
-.{
+/*.{
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
@@ -9,18 +9,17 @@
 }
 
 body, html{
-/*	min-width: 1024px;*/
+	min-width: 1024px;
 	font-family: OpenSans-Regular!important;
 	margin:0;
 }
 
-
+*/
 /*Section Fitur baru*/
 
 .ariq-feature{
 	width: 100%;
-	margin: 500px 0px 30px;
-
+	margin:450px 0px 30px;
 /*	background-color: lightblue;*/
 }
 
@@ -65,7 +64,7 @@ body, html{
 }
 
 .ariq-text-config{
-	line-height: 5px;			/*memberi jarak antara text*/
+	line-height: 1.5;			/*memberi jarak antara text*/
 	font-size: 12px;
 }
 
